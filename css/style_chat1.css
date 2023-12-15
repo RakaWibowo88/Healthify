@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    background: #F8FAFC;
+}
+
+/* Box Utama */
+.boxUtama{
+    position: relative;
+    display: flex;
+    width: 1100px;
+    max-width: 100%;
+    height: calc(100vh - 40px);
+    margin-top: 5px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
+    border-radius: 15px;
+}
+.boxUtama .boxKiri{
+    position: relative;
+    flex: 30%;
+    background: #FFFFFF;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 15px 0px 0px 15px;
+}
+.boxUtama .boxKanan{
+    position: relative;
+    flex: 70%;
+    background: #E5DDD5;
+    border-radius: 0px 15px 15px 0px;
+}
+.boxUtama .boxKanan::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(bg_1.png);
+    opacity: 0.25;
+}
+
+/* Header */
+.headerKiri{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    height: 60px;
+    border-radius: 15px 0px 0px 0px;
+    padding: 0 15px;
+
+    /* background: #FFFFFF; */
+    background: #EDEDED;
+}
+.headerKanan{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    height: 60px;
+    border-radius: 0px 15px 0px 0px;
+    padding: 0 15px;
+
+    /* background: #FFFFFF; */
+    background: #EDEDED;
+}
+.userimg{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.cover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.usericons{
+    display: flex;
+}
+.usericons li{
+   display: flex;
+   list-style: none;
+   cursor: pointer;
+   font-size: 22.5px;
+   margin-left: 15px;
+
+   /* color: #2482C6; */
+   color: #AAAAAA; 
+}
+
+/* Search */
+.search{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.search div{
+    width: 100%;
+}
+.search div input{
+    width: 100%;
+    height: 30;
+    outline: 1px;
+    border: 1px solid #EDEDED;
+    padding: 5px;
+    padding-left: 45px;
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    color: #EDEDED;
+
+    background: #FFFFFF;
+    border-radius: 30px;
+}
+.search div input::placeholder
+{
+    color: #EDEDED;
+}
+.search div ion-icon
+{
+    position: absolute;
+    left: 30px;
+    top: 5px;
+    font-size: 20px;
+
+    color: #EDEDED;
+}
+
+/* Chat List */
+.chatList{
+    position: relative;
+    height: calc(100% + -110px); /* 60 + 30 = 90 */
+    overflow-y: auto;
+    border-radius: 0px 0px 0px 15px;
+    
+    background: #FFFFFF;
+}
+.chatList .block{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+.chatList .block.active{
+    background: #EDEDED;
+}
+.chatList .block:hover{
+    background: #F5F5F5;
+}
+.chatList .block .blockimg{
+    position: relative;
+    min-width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.chatList .block .details{
+    position: relative;
+    width: 100%;
+}
+.chatList .block .details .head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.chatList .block .details .head h4{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    color: #1E1E1E;
+}
+.chatList .block .details .head .time{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    color: #1E1E1E;
+}
+.chatList .block.unread .details .head .time{
+    color: #2482C6;
+}
+.message_b{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.message_b p{
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    font-size: 0.9em;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12.5px;
+    color: #1E1E1E;
+}
+.message_b b{
+    min-width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    color: #FFFFFF;
+
+    background-color: #2482C6;
+}
+
+/* Header Cus */
+.cusimg{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cusimg h4{
+    line-height: 1.25em;
+    margin-left: 15px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    color: #1E1E1E;
+}
+.cusimg h4 span{
+    font-size: 12.5px;
+    font-weight: 600;
+    color: #AAAAAA;
+}
+
+/* Chat Box */
+.chatBox{
+    position: relative;
+    width: 100%;
+    height: calc(100% - 120px); /**/
+    padding: 50px;
+    overflow-y: auto;
+}
+.message{
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin: 5px 0;
+}
+.message p{
+    position: relative;
+    right: 0;
+    text-align:  right;
+    max-width: 65%;
+    padding: 12px;
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.9em;
+    
+    color: #1E1E1E;
+    background: #DCF8C6;
+    border-radius: 10px;
+}
+.message p::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -10px;
+    width: 20px;
+    height: 20px;
+
+    background: linear-gradient(135deg, #DCF8C6 0%, #DCF8C6 50%, transparent 50%, transparent);
+}
+.message p span{
+    display: block;
+    margin-top: 5px;
+    opacity: 0.5;
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+}
+.mine{
+    justify-content: flex-end;
+}
+.your{
+    justify-content: flex-start;
+}
+.your p{
+    background-color: #FFFFFF;
+    text-align: left;
+}
+.message.your p::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -10px;
+    width: 20px;
+    height: 20px;
+
+    background: linear-gradient(225deg, #FFFFFF 0%, #FFFFFF 50%, transparent 50%, transparent);
+}
+
+/* Chat Input */
+.chatInput{
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 17px;
+    width: 771px;
+    height: 60px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0px 0px 15px 0px;
+    background: #EDEDED;
+}
+
+
+
+.chatInput ion-icon{
+    cursor: pointer;
+    font-size: 1.8em;
+    
+    color: #AAAAAA;
+}
+.chatInput ion-icon:nth-child(1)
+{
+    margin-right: 15px;
+}
+.chatInput input{
+    position: relative;
+    width: 90%;
+    margin: 0;
+    margin-left: 0;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+  
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+  
+    border-radius: 30px;
+}
+
+#chatContainer {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+  }
+  
+  #chatIcon {
+    background-color: #007bff;
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  
+  /* #chatContainer:hover #chatBox {
+    display: block;
+  } */
+
+  .endChat{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.endChat div{
+    width: 100%;
+}
+.endChat button.endChat{
+    width: 100%;
+    height: 30px;
+    outline: 1px;
+    padding: 5px;
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    color: #EDEDED;
+
+    background: #2482C6;
+    border-radius: 30px;
+    border: 0px solid transparent;
+}

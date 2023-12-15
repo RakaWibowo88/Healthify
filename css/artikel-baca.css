@@ -1,0 +1,946 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+
+    background: #F8FAFC;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* Style Navbar */
+.navbar {
+    width: 1440px;
+    height: 80px;
+
+    background: #FFFFFF;
+    /* box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1), 0px 2px 4px -2px rgba(0, 0, 0, 0.1); */
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.navbar-konten {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 382px;
+
+    position: relative;
+    width: 1240.09px;
+    height: 50px;
+    left: 100px;
+    top: 15px;
+}
+
+.navbar-konten-kiri {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+
+    width: 170.09px;
+    height: 50px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.navbar-konten-kanan {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 50px;
+
+    height: 35px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.nav-kanan-text {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 25px;
+
+    height: 25px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.nav-kanan-text a {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 25px;
+
+    text-align: center;
+    text-decoration: none;
+
+    color: #808080;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.nav-kanan-text a.aktif {
+    color: #2482C6;
+    text-decoration: none;
+}
+
+.nav-kanan-text a.aktif:hover, a.aktif:focus {
+    color: #2482C6;
+}
+
+.nav-kanan-text a:hover, a:focus {
+    color: #42AB01;
+}
+
+.nav-kanan-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 25px;
+    gap: 10px;
+
+    height: 35px;
+
+    background: #2482C6;
+    border-radius: 30px;
+    border: 0px solid transparent;
+
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 600;
+      font-size: 16px;
+          line-height: 25px;
+
+    text-align: center;
+
+    color: #FFFFFF;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.nav-kanan-button a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.nav-kanan-button:hover, .nav-kanan-button:focus {
+    background: #42AB01;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* Style Artikel Read */
+.artikelr {
+    width: 1440px;
+    height: 3188px;
+    
+    background: #FFFFFF;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.navigasi {
+    position: absolute;
+    width: 1440px;
+    height: 50px;
+
+    background: #F8FAFC;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.nav-kata {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 7px;
+    
+    position: absolute;
+    width: 628px;
+    height: 20px;
+    left: 100px;
+    top: 15px;
+}
+
+.nav-kata a {
+    font-family: 'Quicksand Light';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    
+    color: #2482C6;
+    text-decoration: none;
+}
+
+#beranda {
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+#artikel {
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+#judul {
+    /* Inside auto layout */
+    flex: none;
+    order: 4;
+    flex-grow: 0;
+}
+
+.nav-kata p {
+    font-family: 'Quicksand Light';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    
+    color: #808080;
+}
+
+#arrow-1 {
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+#arrow-2 {
+    /* Inside auto layout */
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+}
+
+.konten {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 50px;
+    
+    position: relative;
+    width: 1240px;
+    height: 2966px;
+    left: 100px;
+    top: 100px;
+}
+
+.konten-atas {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 15px;
+    
+    width: 1240px;
+    height: 50px;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.ka-search {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 15px;
+
+    position: relative;
+    width: 1240px;
+    height: 50px;
+    left: 0px;
+    top: 0px;
+}
+
+input.search {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 25px 12px 25px;
+    gap: 10px;
+
+    width: 1075px;
+
+    border: 2px solid #808080;
+    border-radius: 50px;
+
+    font-family: 'Quicksand Light';
+    font-style: normal;
+    font-weight: 500;
+      font-size: 16px;
+          line-height: 25px;
+
+    color: #808080;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+button.search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-self: center;
+    padding: 10px 52px;
+    gap: 10px;
+
+    width: 150px;
+
+    background: #42AB01;
+    border: 0px solid transparent;
+    border-radius: 50px;
+    cursor: pointer;
+
+    font-family: 'Quicksand Light';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+
+    color: #FFFFFF;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.konten-bawah {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 37px;
+    
+    width: 1240px;
+    height: 2866px;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.kb-kiri {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 25px;
+    
+    width: 816px;
+    height: 2866px;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.kb-kiri p.kb-judul {
+    width: 816px;
+    height: 78px;
+    
+    font-family: 'Quicksand Light';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+
+    display: flex;
+    align-items: center;
+    
+    color: #2482C6;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.kb-kreator {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 5px;
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 33px;
+
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.kb-kreator p {
+    color: #808080;
+}
+
+.kb-kreator p.ijo {
+    color: #42AB01;
+}
+
+.kb-kiri p.kb-waktu {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 33px;
+    
+    color: #808080;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.kb-isi {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 50px;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+}
+
+.kb-isi img {
+    width: 816px;
+    height: 500px;
+    border-radius: 20px;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.kb-isi-lagi {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 20px;
+    
+    width: 816px;
+    height: 2118px;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+#isi-1 {
+    width: 816px;
+    
+    font-family: 'Nunito';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+
+    display: flex;
+    align-items: center;
+    
+    color: #2482C6;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+#isi-2 {
+    width: 816px;
+    
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 33px;
+
+    display: flex;
+    align-items: center;
+    
+    color: #64748B;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.kb-kanan {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 25px;
+    
+    width: 387px;
+    height: 100%;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.kb-list-artikel {
+    box-sizing: border-box;
+
+    width: 387px;
+    height: 883px;
+    
+    border: 1.5px solid #808080;
+    border-radius: 10px;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.kb-header {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 13px 155px 13px 25px;
+    gap: 10px;
+    
+    position: relative;
+    width: 100%;
+    height: 48px;
+    
+    background: #F8FAFC;
+    border-radius: 10px 10px 0px 0px;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.kb-header p {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    
+    color: #2482C6;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.kb-list {
+    position: relative;
+    overflow-y: auto;
+    width: 100%;
+    height: 835px;
+    
+    border-radius: 0px 0px 10px 10px;
+}
+
+.kb-list-konten {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 25px;
+    
+    position: relative;
+    width: 337px;
+    height: 100%;
+    left: calc(50% - 337px/2);
+    top: calc(50% - 785px/2);
+}
+
+.kb-blok {
+    width: 337px;
+    height: 137px;
+    
+    border-radius: 10px;
+}
+
+.kb-blok .bayangan {
+    position: relative;
+    width: 337px;
+    height: 137px;
+    bottom: 141px;
+    
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.blok-konten {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px 86px 0px 0px;
+    gap: 10px;
+
+    position: relative;
+    width: 307px;
+    left: 15px;
+    bottom: 192px;
+}
+
+.blok-konten p a {
+    font-family: 'Quicksand Light';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+
+    display: flex;
+    align-items: center;
+    
+    color: #FFFFFF;
+    text-decoration: none;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+#blok-1 {
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+#blok-2 {
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+#blok-3 {
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+#blok-4 {
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+}
+
+#blok-5 {
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 4;
+    flex-grow: 0;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* Style Footer */
+.footer {
+    width: 1440px;
+    height: 400px;
+    
+    background: #2482C6;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 6;
+    flex-grow: 0;
+}
+
+.footer-konten {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0px;
+    gap: 30px;
+
+    position: relative;
+    width: 1240.06px;
+    height: 313px;
+    left: 100px;
+    top: 40px;
+}
+
+.footer-konten-atas {
+    position: absolute;
+    width: 1240px;
+    height: 180px;
+    left: 0px;
+    top: 20px;
+}
+
+.footer-konten-tengah {
+    position: absolute;
+    width: 1240px;
+    height: 1.5px;
+    left: 0px;
+    top: 220px;
+    
+    background: #FFFFFF;
+    border-radius: 1px;
+}
+
+.footer-konten-bawah {
+    position: absolute;
+    width: 1240.06px;
+    height: 32px;
+    left: 0px;
+    top: 261px;
+}
+
+.f-konten-atas-a {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: absolute;
+    width: 1240px;
+    height: 180px;
+    left: 0px;
+    top: 0px;
+}
+
+.f-konten-atas-kiri {
+    width: 420px;
+    height: 180px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.f-konten-atas-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 20px;
+
+    position: absolute;
+    width: 300px;
+    height: 104px;
+    left: 0px;
+    top: 0px;
+}
+
+.f-konten-atas-logo p {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #FFFFFF;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.f-konten-atas-kanan {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+
+    width: 820px;
+    height: 180px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.f-konten-atas-menu {
+    width: 200px;
+    height: 180px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.f-konten-atas-menu span {
+    position: relative;
+    width: 69px;
+    height: 20px;
+    left: 0px;
+    top: 0px;
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #FFFFFF;
+}
+
+.f-konten-atas-menu-link {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+
+    position: relative;
+    width: 200px;
+    height: 80px;
+    left: 0px;
+    top: 20px;
+}
+
+.f-konten-atas-menu-link p{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #FFFFFF;
+}
+
+.f-konten-bawah-a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+
+    position: absolute;
+    width: 1240.29px;
+    height: 24px;
+    left: 0px;
+    top: 4px;
+}
+
+.f-konten-bawah-kiri p {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #FFFFFF;
+}
+
+.f-konten-bawah-kanan {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 20px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.f-konten-bawah-kanan p {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #FFFFFF;
+}
+
+.f-sosial-media {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */

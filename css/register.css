@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+
+    background: #F8FAFC;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Box Utama */
+.boxUtama{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 50px;
+    
+    width: 802.5px;
+    height: 602.5px;
+    
+    background: #FFFFFF;
+    box-shadow: 0px 5px 10px -1px rgba(0, 0, 0, 0.05), 0px 2.5px 5px -2px rgba(0, 0, 0, 0.05);
+    border-radius: 25px;
+}
+.boxKonten{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    width: 762.5px;
+    border-radius: 12.5px;
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.boxKonten .boxKiri{
+    width: 381.25px;
+    height: 562.5px;
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* gap: 10px; */
+    
+    background: #FFFFFF;
+    border-radius: 12.5px;
+}
+.boxKonten .boxKanan{
+    width: 381.25px;
+    height: 562.5px;
+    position: relative;
+    
+    background: url(../assets/img/content/user/register.png) no-repeat;
+    border-radius: 0px 12.5px 12.5px 0px;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+/* Konten (Atas-Tengah-Bawah) */
+.konten{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+    
+    width: 312.5px;
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.konten .atas{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5px;
+    gap: 5px;
+    
+    width: 312.5px;
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.konten .tengah{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5px;
+    gap: 10px;
+    
+    width: 312.5px;
+    background: #FFFFFF;
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.konten .bawah{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5px;
+    gap: 15px;
+    
+    width: 312.5px;
+    background: #FFFFFF;
+    
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+/* Atas */
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+/* Tengah */
+h2{
+    font-family: 'Quicksand Light';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    /* line-height: 60px; */
+    
+    color: #2482C6;
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.kata{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 3px;
+  
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+h6{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 12px;
+    
+    color: #808080;
+}
+h6.ijo{
+    color: #42AB01;
+}
+
+/* Bawah */
+.input{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding: 0px;
+    gap: 10px;
+    width: 303px; 
+}
+.input input{
+    box-sizing: border-box;
+  
+    width: 303px;
+    height: 32px;
+    padding: 15px;
+    
+    background: #FFFFFF;
+    border: 0.5px solid #A0A0A0;
+    border-radius: 3px;
+  
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    
+    color: #808080;
+  
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.input input:hover{
+    border: 0.5px solid #2482C6;
+}
+.input label{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    
+    color: #808080;
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.cek_box{
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    
+    color: #808080;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.cek_box label{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+    flex-direction: row-reverse;
+  
+    color: #808080;
+}
+.cek_box label input{
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+}
+.cek_box label p{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+  
+    color: #808080;
+  
+    text-decoration: none;
+  
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.cek_box label a:hover{
+    text-decoration: underline;
+}
+.buttonDaftar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 135.75px;
+    gap: 10px;
+    
+    width: 302.5px;
+    height: 32px;
+    
+    background: #2482C6;
+    border-radius: 3px;
+    border: 0px solid transparent;
+    
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 0px;
+    
+    color: #FFFFFF;
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.masuk p{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+  
+    text-decoration: none;
+    
+    color: #808080;
+}
+.masuk p a{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+  
+    text-decoration: none;
+    
+    color: #2482C6;
+}
+.masuk p a:hover{
+    text-decoration: underline;
+}
+
+/*untuk layar device berukuran kecil*/
+@media screen and (min-width: 500px) {
+    .boxUtama, .boxKonten {
+        width: 50%;
+        height: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/*untuk layar device berukuran besar*/
+@media screen and (min-width: 1000px) {
+    .boxUtama, .boxKonten {
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
